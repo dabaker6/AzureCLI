@@ -14,6 +14,6 @@ $subscriptionName = {subcriptionName}
 ```
 ## get Id and set subscription
 ```
-subscriptionId="$(az account list --query "[?name=='$subscriptionName'].id" --output tsv)"
+$subscriptionId="$(az account list --query "[?name=='$subscriptionName'].id" --output tsv)"
 az account set --subscription $subscriptionId
 ```
